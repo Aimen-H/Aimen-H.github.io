@@ -1,0 +1,353 @@
+/* Small mobile devices (iPhone SE, Samsung Galaxy S8+) */
+@media only screen and (max-width: 320px) {
+    body {
+        padding: 30px;
+        overflow-x: hidden;
+    }
+
+    nav {
+        flex-direction: row;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 3rem;
+        font-size: 1.7rem;
+        overflow-x: hidden;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .logo {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .section_text_p2 {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    #profile {
+        flex-direction: row;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .about-containers {
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .Me-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+    }
+}
+
+/* Medium mobile devices (iPhone XR, Pixel 7, Galaxy A51/71) */
+@media only screen and (max-width: 375px) {
+    body {
+        padding: 30px;
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 3rem;
+        font-size: 1.7rem;
+        overflow-x: hidden;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .logo {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .section_text_p2 {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    #profile {
+        flex-direction: row;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .about-containers {
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .Me-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+    }
+}
+
+/* Larger mobile devices (iPhone 12 Pro, Galaxy S20 Ultra) */
+@media only screen and (max-width: 414px) {
+    body {
+        padding: 30px;
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 3rem;
+        font-size: 1.7rem;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .section_text_p2 {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    .Me-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+    }
+}
+
+/* Larger mobile phones and compact tablets (iPhone 14 Pro Max, Galaxy Z Fold 5) */
+@media only screen and (max-width: 430px) {
+    body {
+        padding: 30px;
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 3rem;
+        font-size: 1.7rem;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .section_text_p2 {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    .Me-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+    }
+}
+
+/* Tablets (iPad Mini, iPad Air, Samsung Galaxy S20 Ultra) */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 30px;
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 3rem;
+        font-size: 1.7rem;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .section_text_p2 {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    .Me-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+    }
+
+    .about-details-container {
+        gap: 1.5rem;
+        overflow-x: hidden;
+    }
+}
+
+/* Larger tablets and small laptops (iPad Pro, Surface Pro 7, Surface Duo) */
+@media only screen and (max-width: 1024px) {
+    body {
+        padding: 30px;
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 3rem;
+        font-size: 1.7rem;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .Me-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+    }
+
+    .section_text_p2 {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+}
+
+/* Landscape mode on larger devices (Galaxy Z Fold 5 in landscape) */
+@media only screen and (min-width: 720px) and (max-width: 1080px) {
+    .Me-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        font-size: 1.7rem;
+        overflow-x: hidden;
+    }
+}
+
+/* Laptops and larger tablets (Asus Zenbook Fold, Surface Pro 7, etc.) */
+@media only screen and (max-width: 1366px) {
+    .nav-links {
+        font-size: 1.8rem;
+        gap: 3rem;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        overflow-x: hidden;
+    }
+
+    .Me-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+    }
+
+    .section_text_p2 {
+        font-size: 2.5rem;
+        overflow-x: hidden;
+    }
+}
+
+/* Nest Hub (Portrait Mode) */
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    .nav-links {
+        flex-direction: row;
+        gap: 3rem;
+        font-size: 1.7rem;
+        overflow-x: hidden;
+    }
+
+    .Me-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+}
+
+/* Nest Hub Max */
+@media only screen and (max-width: 1280px) {
+    .nav-links {
+        gap: 3rem;
+        font-size: 1.7rem;
+        overflow-x: hidden;
+    }
+
+    .Me-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+    }
+
+    .section_text_p2 {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+}
+
+/* Large screens (min-width: 1280px) */
+@media only screen and (min-width: 1280px) {
+    body {
+        padding: 30px;
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        gap: 3rem;
+        font-size: 1.7rem;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+
+    .Me-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: hidden;
+    }
+
+    .section_text_p2 {
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+}

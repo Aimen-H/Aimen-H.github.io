@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aimen Haggar's Professional Portfolio - Showcasing skills in Python, cooking, and more">
+    <meta name="keywords" content="Aimen Haggar, Portfolio, Python Developer, Cook, Professional">
+    <title>Aimen Haggar's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="animations.css">
+    <!-- Add favicon -->
+    <link rel="icon" type="image/x-icon" href="./imageF/favicon.ico">
+</head>
+<body style="padding: 0; margin: 0; position: relative; overflow-x: hidden;">
+    <!-- Background animation elements -->
+    <div class="background-animation">
+        <div class="animation-circle"></div>
+        <div class="animation-circle"></div>
+        <div class="animation-circle"></div>
+        <div class="animation-circle"></div>
+        <div class="animation-circle"></div>
+    </div>
+
+    <!-- Main content with a higher z-index to appear above animation -->
+    <div style="position: relative; z-index: 1;">
+        <header>
+            <nav id="desktop-nav" style="margin-bottom: 1rem;">
+                <div class="logo">Aimen Haggar</div>
+                <div>
+                    <ul class="nav-links" style="margin: 0;">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="./funthings.html">Fun Things</a></li>
+                    </ul>  
+                </div>
+            </nav>
+            <nav id="hamburger-nav" style="margin-bottom: 1rem;">
+                <div class="logo">Aimen H.</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>  
+                        <span></span>  
+                        <span></span>  
+                    </div>
+                    <ul class="menu-links" style="margin: 0;">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                        <li><a href="./funthings.html" onclick="toggleMenu()">Fun Things</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main style="margin: 0 auto; max-width: 1200px; padding: 0 1rem;">
+            <!-- Profile Section -->
+            <section id="profile" style="margin-bottom: 2rem;">
+                <div class="section_pic-container">
+                    <img src="./imageF/IMG_0624.JPG" alt="Aimen Haggar - Professional Headshot" style="margin-bottom: 1rem;"/>
+                </div>
+                <div class="section_text">
+                    <p class="section_text_p1">Hello, I'm</p>
+                    <h1 class="title" style="margin: 0.5rem 0;">Aimen Haggar</h1>
+                    <p class="section_text_p2">Python Developer & Culinary Professional</p>
+                    <div class="btn-container" style="gap: 1rem; margin-top: 1rem;">
+                        <button class="btn btn-color-2" onclick="window.open('./imageF/Resume-Aimen.docx')">
+                            Download CV
+                        </button>
+                        <button class="btn btn-color-1" onclick="location.href='#contact'">
+                            Contact Me
+                        </button>
+                    </div>
+                </div>
+            </section> 
+
+            <!-- About Section -->
+            <section id="about" style="margin-bottom: 2rem;">
+                <p class="section_text_p1">Get To Know</p>
+                <h1 class="title" style="margin: 0.5rem 0;">About Me</h1>
+                <div class="section_pic-container">
+                    <img src="./imageF/IMG_4455.JPG" alt="Aimen Haggar - Casual Portrait" class="about-pic" style="margin-bottom: 1rem;"/>
+                    <div class="about-details-container">
+                        <div class="about-text">
+                            <p>I am a passionate individual with culinary expertise. With over 3 years of experience in professional kitchens and a growing portfolio in Python development.</p>
+                        </div>
+                        <div class="details-containers" style="display: flex; justify-content: space-between; gap: 1rem; margin-top: 1rem;">
+                            <div class="details-container" style="flex: 1;">
+                                <img src="./imageF/OIP.jfif" alt="Cooking Experience" style="width: 85%; height: 120px; object-fit: cover; margin-bottom: 1rem; border-radius: 8px;"/>
+                                <h3 style="margin-bottom: 0.5rem;">Professional Experience</h3>
+                                <p>3+ years Line Cook<br>Python Development<br>Team work</p>
+                            </div>
+                            <div class="details-container" style="flex: 1;">
+                                <img src="./imageF/EDUCATION-1024.webp" alt="Education" style="width: 85%; height: 120px; object-fit: cover; margin-bottom: 1rem; border-radius: 8px;"/>
+                                <h3 style="margin-bottom: 0.5rem;">Education & Certifications</h3>
+                                <p>High School Diploma<br>Python Certification<br>Food Safety Certificate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" style="margin-bottom: 2rem;">
+                <p class="section_text_p1">Explore My</p>
+                <h1 class="title" style="margin: 0.5rem 0;">Skills & Expertise</h1>
+                <div class="experience-details-container">
+                    <div class="about-containers" style="gap: 1rem;">
+                        <div class="details-container">
+                            <h2 style="margin-bottom: 1rem;">Technical Skills</h2>
+                            <article style="margin-bottom: 1rem;">
+                                <h3 style="margin-bottom: 0.5rem;">Programming</h3>
+                                <ul style="margin: 0; padding-left: 1.5rem;">
+                                    <li>Python Basics</li>
+                                    <li>HTML/CSS Basics</li>
+                                    <li>JavaScript Basics</li>
+                                </ul>
+                            </article>
+                            <article>
+                                <h3 style="margin-bottom: 0.5rem;">Culinary Arts</h3>
+                                <ul style="margin: 0; padding-left: 1.5rem;">
+                                    <li>Line Cooking</li>
+                                    <li>Menu Development</li>
+                                    <li>Food Safety</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" style="margin-bottom: 2rem;">
+                <p class="section_text_p1">Let's Connect</p>
+                <h1 class="title" style="margin: 0.5rem 0;">Contact Me</h1>
+                <div class="contact-info-container" style="gap: 2rem; display: flex; flex-direction: column; align-items: center;">
+                    <div class="contact-info" style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                        <img src="./imageF/2164894.png" alt="Email icon" class="icon contact-icon" style="width: 80px; height: 80px;"/>
+                        <p style="font-size: 1.5rem;"><a href="mailto:treeaimen@gmail.com">treeaimen@gmail.com</a></p>
+                    </div>
+                    <div class="contact-info" style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                        <img src="./imageF/phone-icon-telephone-icon-symbol-for-app-and-messenger-vector.jpg" alt="Phone icon" class="icon contact-icon" style="width: 80px; height: 80px;"/>
+                        <p style="font-size: 1.5rem;"><a href="tel:902-342-0540">902-342-0540</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer style="text-align: center; margin-top: 2rem;">
+            <p>Copyright © Aimen Haggar. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

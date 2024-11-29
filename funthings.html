@@ -1,0 +1,141 @@
+<div class="gallery-container">
+    <div class="gallery-card">
+        <div class="frame-overlay"></div>
+        <img src="imageF/il_1588xN.6173974739_t5io.webp" alt="Me" class="gallery-image">
+        <div class="image-caption">
+            <h3>Me when am angry</h3>
+        </div>
+    </div>
+    <div class="gallery-card">
+        <div class="frame-overlay"></div>
+        <img src="imageF/895c835a502c96f8b8a750a448b842ce.jpg" alt="Me" class="gallery-image">
+        <div class="image-caption">
+            <h3>Me all time</h3>
+        </div>
+    </div>
+    <div class="gallery-card">
+        <div class="frame-overlay"></div>
+        <img src="imageF/wp6833766.webp" alt="Me" class="gallery-image">
+        <div class="image-caption">
+            <h3>Me with sensi</h3>
+        </div>
+    </div>
+
+
+<style>
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #FF6B00, #FFA500);
+    animation: chakraFlow 10s infinite;
+    border-radius: 20px;
+}
+
+@keyframes chakraFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.gallery-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(255,107,0,0.3);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    background: linear-gradient(45deg, #FF4500, #FF8C00);
+    padding: 10px;
+    border: 2px solid #FFA500;
+}
+
+.frame-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #FFD700;
+    border-radius: 12px;
+    margin: 8px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1;
+    animation: pulseChakra 2s infinite;
+}
+
+@keyframes pulseChakra {
+    0% { box-shadow: 0 0 0 0 rgba(255,107,0,0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(255,107,0,0); }
+    100% { box-shadow: 0 0 0 0 rgba(255,107,0,0); }
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px) rotate(2deg);
+    box-shadow: 0 12px 24px rgba(255,107,0,0.4);
+    animation: ninjaMove 0.5s ease;
+}
+
+@keyframes ninjaMove {
+    0% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+    100% { transform: translateY(-5px) rotate(2deg); }
+}
+
+.gallery-card:hover .frame-overlay {
+    border-color: #FFD700;
+    transform: scale(0.98);
+    box-shadow: 0 0 20px #FFA500;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+}
+
+.gallery-card:hover .gallery-image {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,69,0,0.8);
+    color: white;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.gallery-card:hover .image-caption {
+    transform: translateY(0);
+    background: linear-gradient(to right, rgba(255,69,0,0.9), rgba(255,140,0,0.9));
+}
+
+.image-caption h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Ninja Naruto', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.image-caption p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: #FFD700;
+}
+</style>
